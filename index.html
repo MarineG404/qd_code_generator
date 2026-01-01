@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR Code Generator</title>
+	<link rel="stylesheet" href="style.css?v=3.1">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1>QR Code Generator</h1>
+
+	<div class="card">
+		<h2>Generate your QR Code</h2>
+
+		<form id="qrForm">
+			<label for="data">Enter data :</label>
+			<input type="text" id="data" name="data" placeholder="https://marinegonnord.fr" required>
+			<label for="imageInput">Add image :</label>
+			<input type="file" id="imageInput" accept="image/*">
+			<button type="submit">Generate</button>
+		</form>
+
+		<div id="qrcode"></div>
+	</div>
+
+	<footer>
+		<img src="avatar.svg" alt="Marine Gonnord Avatar" class="avatar">
+		<p>Made with ❤️ by <a href="https://marinegonnord.fr" target="_blank" rel="noopener noreferrer">Marine
+				Gonnord</a></p>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
